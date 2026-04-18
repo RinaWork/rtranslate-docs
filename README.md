@@ -15,36 +15,24 @@ Complete documentation for Unnamed Translate - a low-cost, multilingual translat
 
 ```
 docs/
-├── docs-viewer/        # React app for viewing docs
 ├── architecture/       # System design & data flows
 ├── api/               # API specs & examples
 ├── deployment/        # VPS, Docker, cloud guides
 └── user/              # End-user guides (VI/EN)
 ```
 
-## Getting Started
+## GitHub Pages Setup
 
-### View Docs Locally
-
-```bash
-cd docs-viewer
-npm install
-npm run dev
-# Open http://localhost:5173
-```
-
-### Deploy to GitHub Pages
-
-```bash
-# Automatic on push to main
-git push origin main
-```
+1. Go to repo Settings → Pages
+2. Source: Deploy from a branch
+3. Branch: `main` / `root`
+4. Theme: Choose a Jekyll theme (optional)
+5. Save
 
 ## Contributing
 
 1. Create/edit `.md` files in appropriate folder
-2. Update `docs-viewer/src/App.tsx` if adding new pages
-3. Commit and push - auto-deploys to GitHub Pages
+2. Commit and push - GitHub Pages auto-updates
 
 ---
 

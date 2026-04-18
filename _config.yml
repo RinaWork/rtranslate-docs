@@ -1,0 +1,17 @@
+title: Unnamed Translate Docs
+description: Documentation for a low-cost, multilingual translator optimized for Vietnamese users
+theme: jekyll-theme-cayman
+
+plugins:
+  - jekyll-relative-links
+
+relative_links:
+  enabled: true
+  collections: true
+
+include:
+  - README.md
+  - architecture/
+  - api/
+  - deployment/
+  - user/
