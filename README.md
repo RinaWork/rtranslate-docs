@@ -1,6 +1,32 @@
 # Documentation
 
-Complete documentation for Unnamed Translate - a low-cost, multilingual translator optimized for Vietnamese users.
+Complete documentation for **Unnamed Translate** - a low-cost, multilingual translator optimized for Vietnamese users.
+
+## Features
+
+- 🌐 **8 Languages**: Vietnamese, English, Chinese, Japanese, Korean, German, French, Spanish
+- 🎭 **Multiple Tones**: Casual, formal, business, gaming/slang
+- 📝 **Multi-Variant**: 1-3 translation variants to choose from
+- 📚 **Smart Dictionary**: Definitions, examples, synonyms
+- ✍️ **Grammar & Rewrite**: Fix grammar, rewrite naturally, simplify text
+- ⚡ **Fast**: Cache-first, <100ms for cached content
+- 🛡️ **Anti-Abuse**: Rate limiting built-in
+- 💰 **Low Cost**: ~$5/month total (VPS + free Cloudflare AI tier)
+
+## Tech Stack
+
+| Component | Technology |
+|-----------|------------|
+| Backend | Go + Fiber + Redis |
+| Frontend | React + Vite + Tailwind + shadcn/ui |
+| AI | Cloudflare Workers AI (Llama 3.1) |
+| Hosting | Hetzner CX11 VPS |
+
+## Related Repositories
+
+- [rtranslate-backend](https://github.com/RinaWork/rtranslate-backend) - Go API server
+- [rtranslate-frontend](https://github.com/RinaWork/rtranslate-frontend) - React web app
+- [rtranslate-docs](https://github.com/RinaWork/rtranslate-docs) - This documentation
 
 ## Quick Navigation
 
