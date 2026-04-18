@@ -22,9 +22,12 @@ function App() {
   const [currentPath, setCurrentPath] = useState('README.md')
   const [sidebarOpen, setSidebarOpen] = useState(true)
 
-  const loadDoc = async (path: string) => {
+  // Get base URL for GitHub Pages support
+const BASE_URL = import.meta.env.BASE_URL || '/'
+
+const loadDoc = async (path: string) => {
     try {
-      const response = await fetch(`/${path}`)
+      const response = await fetch(`${BASE_URL}${path}`)
       if (response.ok) {
         const text = await response.text()
         setContent(text)
